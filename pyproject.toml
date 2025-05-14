@@ -1,7 +1,16 @@
 [project]
 name = "git-gdrive-remote"
 version = "0.1.0"
-description = "Add your description here"
+description = "A git remote's helper for google drive"
+authors = ["Marcelo Vilela <marcelo.filho.cps@gmail.com>]
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Version Control",
+    "Topic :: Utilities",
+]
+
 dependencies = []

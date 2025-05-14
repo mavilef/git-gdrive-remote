@@ -3,7 +3,7 @@ import sys
 import logging
 
 logger = logging.getLogger(__name__)
-formatter = logging.Formatter("[%(asctime)s][%(funcName)s][%(levelname)s] %(message)s")
+formatter = logging.Formatter("[%(asctime)s][%(name)s][%(levelname)s] %(message)s")
 
 if "app" in __name__:
     logger.setLevel(logging.ERROR)
