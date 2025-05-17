@@ -1,6 +1,6 @@
-from argparse import ArgumentParser
-import sys
 import logging
+import sys
+from argparse import ArgumentParser
 
 logger = logging.getLogger(__name__)
 formatter = logging.Formatter("[%(asctime)s][%(name)s][%(levelname)s] %(message)s")
@@ -25,11 +25,16 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "remote",
-        help="gdrive remote name using prefix gd://, gdrive:// or googledrive://",
+        "remote-name",
+        help="Remote name"
+    )
+
+    parser.add_argument(
+        "remote-url",
+        help="Google drive remote name using prefix gd://, gdrive:// or googledrive://",
     )
 
     args = parser.parse_args()
 
     logger.info(f"Received remote {args.remote}")
-    
+
