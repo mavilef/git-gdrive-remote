@@ -1,4 +1,4 @@
-from src.app import validate_google_drive_url
+from src.utils import validate_google_drive_url
 import unittest
 
 class TestValidateGoogleDriveUrl(unittest.TestCase):
